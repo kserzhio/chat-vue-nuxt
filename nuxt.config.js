@@ -44,6 +44,10 @@ module.exports = {
   modules: [
     '@nuxtjs/vuetify',
   ],
+  buildModules: [
+    // Simple usage
+    '@nuxtjs/vuetify',
+  ],
   /*
   ** vuetify module configuration
   ** https://github.com/nuxt-community/vuetify-module
