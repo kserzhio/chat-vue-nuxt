@@ -1,6 +1,6 @@
 <template>
   <v-app app dark>
-    <v-navigation-drawer app v-model="drawer">
+    <v-navigation-drawer app v-model="drawer" mobile-break-point="650">
         <v-list subheader>
           <v-subheader>Recent chat</v-subheader>
           <v-list-tile
@@ -26,11 +26,10 @@
       <v-toolbar-title>Чат комнаты {{user.room}}</v-toolbar-title>
     </v-toolbar>
     <v-content>
-      <div>
+      <div class="full-height">
         <nuxt/>
       </div>
     </v-content>
-  <nuxt/>
   </v-app>
 </template>
 
@@ -54,3 +53,8 @@ export default {
     }
 }
 </script>
+<style scoped>
+.full-height{
+  height: 100%;
+}
+</style>
